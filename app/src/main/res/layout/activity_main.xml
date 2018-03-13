@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+ <data>
+  <variable
+      name="button"
+      type="com.example.user.mvvmre2.buttonhandel"/>
+ </data>
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="button"
+      android:id="@+id/btn"
+      android:onClick="@{(v)->button.onclick()}"
+      />
+  <android.support.v7.widget.RecyclerView android:id="@+id/rec"
+      android:layout_below="@id/btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+ </RelativeLayout>
+</layout>
