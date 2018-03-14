@@ -4,11 +4,16 @@ import android.util.Log;
 
 import com.example.user.mvvmre2.Api;
 import com.example.user.mvvmre2.MainActivity;
+import com.example.user.mvvmre2.daggercomponnent.DaggerRetrofitComponent;
+import com.example.user.mvvmre2.daggercomponnent.RetrofitComponent;
+import com.example.user.mvvmre2.daggermodul.RetrofitModul;
 import com.example.user.mvvmre2.model.Hero;
 import com.example.user.mvvmre2.viewmodel.Movie;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.inject.Inject;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -23,6 +28,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class DataHandel {
     ArrayList<Movie> movieList;
     MainActivity mainActivity;
+    @Inject
+    Retrofit retrofit;
 
     public DataHandel(MainActivity mainActivity) {
         this.mainActivity = mainActivity;
@@ -34,7 +41,8 @@ public class DataHandel {
 
     public void getAraayListMovie() {
         movieList = new ArrayList<>();
-        Retrofit retrofit = new Retrofit.Builder().baseUrl(Api.BASE_URL).addConverterFactory(GsonConverterFactory.create()).build();
+        RetrofitComponent retrofitComponent= DaggerRetrofitComponent.builder().retrofitModul(new RetrofitModul(Api.BASE_URL)).build();
+        retrofit=retrofitComponent.getRetrofitComponent();
         Api api = retrofit.create(Api.class);
 
         Call<ArrayList<Hero>> call = api.getHero();
