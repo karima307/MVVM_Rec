@@ -1,9 +1,10 @@
-package com.example.user.mvvmre2.model;
+package com.example.user.mvvmre2.viewmodel;
 
 import android.util.Log;
 
 import com.example.user.mvvmre2.Api;
 import com.example.user.mvvmre2.MainActivity;
+import com.example.user.mvvmre2.model.Hero;
 import com.example.user.mvvmre2.viewmodel.Movie;
 
 import java.util.ArrayList;

@@ -3,19 +3,10 @@ package com.example.user.mvvmre2.viewmodel;
 import android.databinding.BaseObservable;
 import android.util.Log;
 
-import com.example.user.mvvmre2.Api;
 import com.example.user.mvvmre2.R;
-import com.example.user.mvvmre2.model.DataHandel;
 import com.example.user.mvvmre2.model.Hero;
 
 import java.util.ArrayList;
-import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * Created by user on 2/28/2018.
@@ -75,8 +66,6 @@ public class Movie extends BaseObservable {
 
         ArrayList<Movie> movies ;
         DataHandel jj = new DataHandel();
-
-        // movie=new Movie(jj);
         movies = jj.moviesArrayList();
         // movies.add(movie);
         Log.d( "getmodel: ",movies.toString());
