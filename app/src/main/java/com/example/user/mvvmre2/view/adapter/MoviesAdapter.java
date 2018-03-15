@@ -1,23 +1,17 @@
-package com.example.user.mvvmre2.adapter;
+package com.example.user.mvvmre2.view.adapter;
 
-import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
-import com.example.user.mvvmre2.Api;
 import com.example.user.mvvmre2.databinding.MovielistBinding;
 import com.example.user.mvvmre2.viewmodel.Movie;
 import com.example.user.mvvmre2.R;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by user on 2/28/2018.

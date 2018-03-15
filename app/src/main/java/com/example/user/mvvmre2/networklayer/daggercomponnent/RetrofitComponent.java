@@ -1,6 +1,6 @@
-package com.example.user.mvvmre2.daggercomponnent;
+package com.example.user.mvvmre2.networklayer.daggercomponnent;
 
-import com.example.user.mvvmre2.daggermodul.RetrofitModul;
+import com.example.user.mvvmre2.networklayer.daggermodul.RetrofitModul;
 
 import javax.inject.Singleton;
 

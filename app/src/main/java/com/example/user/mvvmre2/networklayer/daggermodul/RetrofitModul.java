@@ -1,4 +1,4 @@
-package com.example.user.mvvmre2.daggermodul;
+package com.example.user.mvvmre2.networklayer.daggermodul;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

@@ -1,4 +1,4 @@
-package com.example.user.mvvmre2;
+package com.example.user.mvvmre2.model;
 
 import com.example.user.mvvmre2.model.Hero;
 

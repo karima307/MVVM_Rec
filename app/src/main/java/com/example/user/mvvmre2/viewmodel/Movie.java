@@ -3,7 +3,7 @@ package com.example.user.mvvmre2.viewmodel;
 import android.databinding.BaseObservable;
 import android.util.Log;
 
-import com.example.user.mvvmre2.NetorkLayer.DataHandel;
+import com.example.user.mvvmre2.networklayer.DataHandel;
 import com.example.user.mvvmre2.R;
 import com.example.user.mvvmre2.model.Hero;
 

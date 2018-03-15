@@ -1,4 +1,4 @@
-package com.example.user.mvvmre2;
+package com.example.user.mvvmre2.view;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -6,9 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
-import com.example.user.mvvmre2.adapter.MoviesAdapter;
+import com.example.user.mvvmre2.R;
+import com.example.user.mvvmre2.view.adapter.MoviesAdapter;
 import com.example.user.mvvmre2.databinding.ActivityMainBinding;
-import com.example.user.mvvmre2.NetorkLayer.DataHandel;
+import com.example.user.mvvmre2.networklayer.DataHandel;
 import com.example.user.mvvmre2.viewmodel.Movie;
 
 import java.util.ArrayList;

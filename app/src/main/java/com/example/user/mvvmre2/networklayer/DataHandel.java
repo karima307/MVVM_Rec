@@ -1,12 +1,9 @@
-package com.example.user.mvvmre2.NetorkLayer;
+package com.example.user.mvvmre2.networklayer;
 
 import android.util.Log;
 
-import com.example.user.mvvmre2.Api;
-import com.example.user.mvvmre2.MainActivity;
-import com.example.user.mvvmre2.daggercomponnent.DaggerRetrofitComponent;
-import com.example.user.mvvmre2.daggercomponnent.RetrofitComponent;
-import com.example.user.mvvmre2.daggermodul.RetrofitModul;
+import com.example.user.mvvmre2.model.Api;
+import com.example.user.mvvmre2.view.MainActivity;
 import com.example.user.mvvmre2.model.Hero;
 import com.example.user.mvvmre2.viewmodel.Movie;
 
