@@ -8,7 +8,7 @@ import android.util.Log;
 
 import com.example.user.mvvmre2.adapter.MoviesAdapter;
 import com.example.user.mvvmre2.databinding.ActivityMainBinding;
-import com.example.user.mvvmre2.viewmodel.DataHandel;
+import com.example.user.mvvmre2.NetorkLayer.DataHandel;
 import com.example.user.mvvmre2.viewmodel.Movie;
 
 import java.util.ArrayList;
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         movie = new Movie();
-        dataHandel = new DataHandel(this);
+
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         // movieList = movie.getmodel();
         mAdapter = new MoviesAdapter(movie.getmodel());

@@ -1,4 +1,4 @@
-package com.example.user.mvvmre2.viewmodel;
+package com.example.user.mvvmre2.NetorkLayer;
 
 import android.util.Log;
 
@@ -31,15 +31,15 @@ public class DataHandel {
     @Inject
     Retrofit retrofit;
 
-    public DataHandel(MainActivity mainActivity) {
+  /*  public DataHandel(MainActivity mainActivity) {
         this.mainActivity = mainActivity;
         getAraayListMovie();
     }
-
+*/
     public DataHandel() {
     }
 
-    public void getAraayListMovie() {
+    /*public void getAraayListMovie() {
         movieList = new ArrayList<>();
         RetrofitComponent retrofitComponent= DaggerRetrofitComponent.builder().retrofitModul(new RetrofitModul(Api.BASE_URL)).build();
         retrofit=retrofitComponent.getRetrofitComponent();
@@ -72,7 +72,7 @@ public class DataHandel {
         });
 
         //   return  movieList;
-    }
+    }*/
 
     public ArrayList<Movie> moviesArrayList() {
         movieList = new ArrayList<>();
